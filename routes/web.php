@@ -20,8 +20,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'ProfileController@show');
+
 Route::post('/createTweet', 'ProfileController@createTweet');
+
 Route::post('/deleteTweet', 'ProfileController@deleteTweet');
+
 Route::post('/tweet', 'ProfileController@editTweet');
 Route::get('/tweet', 'ProfileController@showEditTweet');
 

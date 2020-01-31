@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
-use DB;
 
 class ProfileController extends Controller
 {
@@ -14,7 +12,6 @@ class ProfileController extends Controller
     }
     function createTweet(Request $request){
          $request->validate([
-            'author' => 'required|min:3|max:10',
             'content' => 'required|min:3|max:10'
         ]);
         $tweet = new \App\Tweet();
@@ -38,7 +35,6 @@ class ProfileController extends Controller
     }
     function editTweet(Request $request){
         $request->validate([
-            'author' => 'required|min:3|max:10',
             'content' => 'required|min:3|max:10'
         ]);
 

@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a href="/profile"><strong>Go to profile</strong></a>
                 </div>
             </div>
         </div>
