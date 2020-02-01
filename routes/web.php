@@ -28,5 +28,7 @@ Route::post('/deleteTweet', 'ProfileController@deleteTweet');
 Route::post('/tweet', 'ProfileController@editTweet');
 Route::get('/tweet', 'ProfileController@showEditTweet');
 
-Route::any('userList', 'UsersController@show');
+Route::get('/userList', 'UsersController@show');
+Route::post('/userList/follow', 'UsersController@follow');
+Route::post('/userList/unfollow', 'UsersController@unfollow');
 
