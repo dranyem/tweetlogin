@@ -6,6 +6,7 @@
     @else
 
     <h1>Welcome {{Auth::user()->name}}</h1>
+    <a href="/userList">List of Users</a>
     <form action="/createTweet" method="post">
         @csrf
         <label for="author">Author : {{Auth::user()->name}}</label>
